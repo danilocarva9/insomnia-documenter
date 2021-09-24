@@ -6,9 +6,9 @@ async function app() {
   const root = document.getElementById('app');
   const rootPath = root.getAttribute('data-root') || '';
 
-  const url = process.env.NODE_ENV === 'demo'
-    ? '/insomnia-documenter/insomnia.json'
-    : `${rootPath}/insomnia.json`;
+  const url = `insomnia.json`;
+
+  console.log('url '+url);
 
   window.INSOMNIA_URL = url;
 
